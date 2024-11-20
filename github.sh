@@ -18,7 +18,6 @@ echo "#ignoring windows, mac and linux folders" >> .gitignore
 echo "windows" >> .gitignore
 echo "mac" >> .gitignore
 echo "linux" >> .gitignore
-echo "node_modules" >> .gitignore
 
 git init
 git remote add origin $repositorio
@@ -32,6 +31,6 @@ git commit -m "added ignored files" .gitignore
 
 git add .
 
-git commit -am "RastroBus - Formatando e criando o tema + google fontes - $(date)"
+git commit -am "RastroBus - Lendo as tabelas do banco de dados OK - $(date)"
 
 git push origin $branch_name

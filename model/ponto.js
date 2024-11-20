@@ -12,7 +12,7 @@ const Ponto = sequelize.define('Ponto', {
         allowNull: false,
     },
     cor: {
-        type: DataTypes.ENUM('verde', 'vermelha', 'azul'),
+        type: DataTypes.ENUM('#00FF00', '#0000FF', '#FF0000'),
         allowNull: false,
     },
     endereco: {
@@ -44,7 +44,7 @@ const Ponto = sequelize.define('Ponto', {
         allowNull: false,
     },
     imagem: {
-        type: DataTypes.TEXT,
+        type: DataTypes.TEXT('long'),
         allowNull: false,
     },
 }, {
